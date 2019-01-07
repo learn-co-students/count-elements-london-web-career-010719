@@ -1,4 +1,5 @@
 def count_elements(array)
-  # code goes here
+  new_hash = {}
+  array.each {|x| new_hash[x] = array.count(x) if !new_hash[x]}
+  return new_hash
 end
- 
